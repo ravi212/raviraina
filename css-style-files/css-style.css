@@ -1,0 +1,1861 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background: #373737;
+    font-family: "poppins", sans-serif;
+    line-height: 1.5;
+}
+
+/*slide bar*/
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: #8fc33a;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #565656;
+  border-radius: 50px;
+  outline: 1px solid #e0ffc6;
+}
+
+
+/*wrapper global*/
+
+.wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+}
+.wrapper header{
+    margin-top: 22px;
+    padding: 0;
+}
+
+/* Named Logo */
+header #branding{
+    align-content: center;
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 5%;
+    width: 150px;
+    height: 35px;
+    border-right: 2px solid #d1e8e2;
+}
+#branding #logoname{
+    color: #d1e8e2;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+#logoname #firstname{
+    color: #8fc33a;
+}
+
+/* Navigation */ 
+
+header nav{
+    margin: 0 auto;
+    width: 50%;
+    padding: 0;
+    z-index: 999999;
+    
+}
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: #d1e8e2;
+}
+ul li a:hover{
+    color: #ff8000;
+}
+
+.menu {
+    display: none;
+}
+/* Ham burger icon */
+
+header .containham{
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    top: 5.8%;
+    right: 4%;
+    width: 30px;
+    height: 20px;
+    visibility: hidden;
+    transition: all ease-in 0.3s;
+}
+
+.containham .hamburger{
+    width: 100%;
+    background: #d1e8e2;
+    margin: 0;
+}
+.containham #line1{
+    position: relative;
+    height: 3px;
+    top: 0px;
+    transition: all cubic-bezier(0.4, -0.04, 0.58, 1.49) 0.3s;
+}
+.containham #line2{
+    height: 3px;
+    position: relative;
+    top: 4px;
+    transition: 0.2s;
+}
+.containham #line3{
+    height: 3px;
+    position: relative;
+    top: 8px;
+    transition: all cubic-bezier(0.4, -0.04, 0.58, 1.49) 0.3s;
+}
+.containham:hover{
+    cursor: pointer;
+}
+.containham.close #line1{
+    transform: rotate(45deg);
+    top: 40%;
+    transition: all cubic-bezier(0.4, -0.04, 0.58, 1.49) 0.3s;
+}
+.containham.close #line3 {
+    transform: rotate(-45deg);
+    transition: all cubic-bezier(0.4, -0.04, 0.58, 1.49) 0.3s;;
+    top: 10%;
+}
+.containham.close #line2{
+    opacity: 0;
+    background: #373737;
+    transition: 0.2s;
+}
+.active{
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Body text and quotes on other pages */
+.wrapper #bodytext{
+	margin: 0 auto;
+    padding: 25px 0px 0px 0px;
+    width: 70%;
+    align-content: center;
+    text-align: center;
+}
+#bodytext #centertext{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+}
+#centertext p{
+    font-size: 23px;
+    color: #d1e8e2;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+#centertext p:nth-child(2){
+    line-height: 1;
+}
+#centertext p:nth-child(1){
+    margin-top: 50px;
+}
+
+#centertext #myname{
+    color: #8fc33a;
+}
+#centertext #indiatext{
+    margin 0;
+    padding: 0;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+#centertext span:nth-child(1), span:nth-child(2){
+    color: #ff8000;
+}
+#centertext span:nth-child(4), span:nth-child(5){
+    color: #8fc33a;
+}
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 23px;
+    line-height: 2;
+    width: 50%;
+    text-align: center;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 25px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+    font-size: 30px;
+}
+#bodytext #otbelowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 22px;
+    line-height: 2;
+    width: 50%;
+    text-align: center;
+}
+#otbelowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 25px;
+}
+#otbelowcenter span:nth-child(2){
+    color: #8fc33a;
+    font-size: 30px;
+}
+
+
+
+/* center image and logo image for mobile view */
+.wrapper #centerlogo{
+    margin: 0 auto;
+    background: #d1e8e2;
+    position: relative;
+    top: 40px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    align-content: center;
+    border: 2px solid #8fc33a;
+}
+#centerlogo #centerimg{
+    padding: 23px 0px 0px 0px;
+    align-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#centerimg img{
+    width: 25%;
+    position: relative;
+}
+
+
+/* Footer common to all */
+.wrapper footer{
+    position: relative;
+    bottom: 5px;
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    font-size: 15px;
+    color: #565656;
+}
+footer p{
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+}
+.activelink{
+    color: #8fc33a;
+}
+
+/* Social icons */
+
+footer #socialicons{
+    position: relative;
+    top: 3.5%;
+    display: inline;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+}
+.wrapper #abtsocialicons{
+    position: absolute;
+    top: 3.5%;
+    right: 8%;
+    align-content: center;
+    text-align: center;
+    visibility: hidden;
+    width: 100px;
+    height: 40px;
+}
+.fa {
+    margin: 1px;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 13px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-facebook {
+    background: #565656;
+    color: white;
+}
+
+.fa-twitter {
+    background: #565656;
+    color: white;
+} 
+.fa-stack-overflow {
+    background: #565656;
+    color: white;
+} 
+.fa-linkedin {
+    background: #565656;
+    color: white;
+} 
+.fa-quora {
+    background: #565656;
+    color: white;
+} 
+.fa-google-plus{
+    background: #565656;
+    color: white;
+} 
+
+
+/* Work page intro */
+.wrapper .introduce{
+	width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.introduce #introtext{
+    margin: 0 auto;
+    text-align:justify;
+    width: 40%;
+    letter-spacing: 0.8px;
+}
+#introtext p{
+    font-size: 20px;
+    color: #d1e8e2;
+    margin-top: 0px;
+
+}
+#introtext p:nth-child(2){
+    color:#8fc33a;
+    text-align: center;
+    margin-top: 10px;
+	
+}
+
+/* ABOUT skill set */
+.introduce #skillset{
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+    width: 39%;
+    letter-spacing: 1px;
+}
+#skillset p:nth-child(1){
+	color: #8fc33a;
+    font-size: 21px;
+}
+#skillset p:nth-child(2){
+	color:#ff8000;
+    font-size: 19px;
+}
+#skillset p:nth-child(3){
+	color:#d1e8e2;
+    font-size: 18px;
+}
+#skillset p:nth-child(4){
+	color:#ff8000;
+    font-size: 19px;
+}
+#skillset p:nth-child(5){
+	color: #d1e8e2;
+    font-size: 18px;
+}
+#skillset p:nth-child(6){
+	color: #d1e8e2;
+    font-size: 19px;
+}
+#skillset p:nth-child(7){
+	color: #d1e8e2;
+    font-size: 18px;
+}
+#skillset p:nth-child(8){
+	color:#ff8000;
+    font-size: 19px;
+}
+#skillset p:nth-child(9){
+	color: #d1e8e2;
+    font-size: 18px;
+}
+
+/*work image*/
+.wrapper #workdone{
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+#workdone #first1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 5%;
+    transition: all ease-in-out .3s;
+}
+#first1 img{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all ease-in-out .3s;
+}
+#first1 .hoveref {
+	position: absolute;
+    opacity: 0;
+    background-color: #d1e8e2;
+    transition: all ease-in-out .3s;
+}
+#first1:hover .hoveref {
+	opacity: 0.9;
+    transition: all ease-in-out .3s;
+}
+#first1 #text{
+    color: #575757;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+}
+.lefthoverr{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+#first1:hover .lefthoverr {
+	width: 100%;
+    transition: all ease-in-out .3s;
+}
+#workdone p{
+	color: #d1e8e2;
+    font-size: 18px;
+}
+
+/*contacts page*/
+.wrapper #contactss{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+}
+#contactss p:nth-child(1){
+	color:#8fc33a;
+    font-size: 25px;
+    padding: 15px 0px 0px 0px;
+    margin: 0;
+}
+#contactss p:nth-child(2){
+	color:#d1e8e2;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    color:#ff8000;
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+}
+#contactss p:nth-child(4){
+	color:#8fc33a;
+    font-size: 25px;
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+  
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+#bodytext #centertext{
+    width: 70%;
+}
+#centertext p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+#centertext #indiatext{
+    font-size: 30px;
+}
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 0px 0px 0px 0px;
+    width: 80%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 24px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+}
+#bodytext #otbelowcenter{
+	width:65%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 22px;
+}
+#otbelowcenter p{
+	margin-bottom: 25px;
+    margin-top: 25px;
+}
+#otbelowcenter span:nth-child(1){
+    font-size: 22px;
+}
+#otbelowcenter span:nth-child(2){
+    font-size: 25px;
+}
+
+
+.wrapper #introtext{
+    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+    text-align:justify;
+    width: 60%;
+    transition: all 0.3s ease-in-out;
+}
+#introtext p{
+    font-size:19.4px;
+    letter-spacing: 1px;
+}
+    .introduce #skillset{
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#skillset p{
+    font-size: 15px;
+    color: #d1e8e2;
+}
+#skillset p:nth-child(1){
+    letter-spacing: 1px;
+	transition: all 0.3s ease-in-out; 
+    font-size: 22px;
+}
+
+    
+    .wrapper #workdone{
+	width: 50%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+    .lefthoverr {
+	width: 100%;
+}
+    #first1 .hoveref {
+	opacity: 0.8;
+}
+    
+    .wrapper #contactss{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+#contactss p:nth-child(1){
+    font-size: 23px;
+}
+#contactss p:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    font-size: 27px;
+}
+#contactss p:nth-child(4){
+    font-size: 23px;
+}
+  
+}
+
+
+@media (min-width: 480px) and (max-width: 767px)  {
+  
+  .wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .wrapper .menu{
+	  width: 100%;
+       height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        background: #373737;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+}
+    .wrapper #branding{
+    top: 3px;
+    margin: 0 auto;
+    left: 0;
+    float: none;
+    border-right: 2px solid #d1e8e2;
+    border-left: 2px solid #d1e8e2;
+    z-index: 9999999;
+}
+    .wrapper nav{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    }
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+}
+ul li{
+    display: block;
+    padding: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: #d1e8e2;
+}
+ul li a:hover{
+    color: #ff8000;
+}
+.menu.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+nav.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrapper .containham{
+    top: 5.8%;
+    right: 10%;
+    visibility: visible;
+}
+
+.wrapper #abtsocialicons{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#abtsocialicons.active {
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+    
+
+.wrapper #bodytext{
+	width: 100%;
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+#bodytext #centertext{
+    width: 65%;
+}
+#centertext p{
+    font-size: 21px;
+    line-height: 1.5;
+}
+#centertext #indiatext{
+    font-size: 30px;
+}
+
+#centerlogo {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#centerimg {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+    #centerimg img{
+    z-index: 999;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+    }
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 0px 0px 0px 0px;
+    width: 70%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 22px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+}
+#bodytext #otbelowcenter{
+	width:70%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 22px;
+}
+#otbelowcenter p{
+	margin-bottom: 25px;
+    margin-top: 15px;
+}
+#otbelowcenter span:nth-child(1){
+    font-size: 22px;
+}
+#otbelowcenter span:nth-child(2){
+    font-size: 25px;
+}
+
+
+.wrapper footer{
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+footer p{
+    padding: 15px 0px 5px 0px;
+    margin: 0;
+    
+}
+
+    .wrapper #introtext{
+    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+    text-align:justify;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+}
+#introtext p{
+    font-size: 19.8px;
+    color: #d1e8e2;
+    
+}
+#introtext p:nth-child(2){
+    color:#8fc33a;
+    text-align: center;
+    margin-top: 10px;
+	
+}
+.introduce #skillset{
+    margin: 0 auto;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+    text-align:left;
+    width: 85%;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#skillset p{
+    font-size: 15px;
+    color: #d1e8e2;
+}
+#skillset p:nth-child(1){
+    letter-spacing: 1px;
+	transition: all 0.3s ease-in-out; 
+}
+    
+    .wrapper #workdone{
+	width: 80%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+    .lefthoverr {
+	width: 100%;
+}
+    #first1 .hoveref {
+	opacity: 0.8;
+}
+    
+    .wrapper #contactss{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+#contactss p:nth-child(1){
+    font-size: 23px;
+}
+#contactss p:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    font-size: 27px;
+}
+#contactss p:nth-child(4){
+    font-size: 23px;
+}
+    #workdone.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #contactss.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #introtext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #skillset.activeop{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .foot.activeop {
+	display: none;
+    }
+    footer.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #centerlogo.activeop {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}
+        #bodytext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 425px) and (max-width: 479px){
+    .wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .wrapper .menu{
+	  width: 100%;
+       height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        background: #373737;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+}
+    .wrapper #branding{
+    top: 3px;
+    margin: 0 auto;
+    left: 0;
+    float: none;
+    border-right: 2px solid #d1e8e2;
+    border-left: 2px solid #d1e8e2;
+    z-index: 9999999;
+}
+    .wrapper nav{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    }
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+}
+ul li{
+    display: block;
+    padding: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: #d1e8e2;
+}
+ul li a:hover{
+    color: #ff8000;
+}
+.menu.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+nav.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrapper .containham{
+    top: 5.8%;
+    right: 10%;
+    visibility: visible;
+}
+
+.wrapper #abtsocialicons{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#abtsocialicons.active {
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+    
+
+.wrapper #bodytext{
+	width: 100%;
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+#bodytext #centertext{
+    width: 70%;
+}
+#centertext p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+#centertext #indiatext{
+    font-size: 30px;
+}
+
+#centerlogo {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#centerimg {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+    #centerimg img{
+    z-index: 999;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+    }
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 0px 0px 0px 0px;
+    width: 75%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 22px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+}
+#bodytext #otbelowcenter{
+	width:70%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 20px;
+}
+#otbelowcenter p{
+	margin-bottom: 25px;
+    margin-top: 15px;
+}
+#otbelowcenter span:nth-child(1){
+    font-size: 22px;
+}
+#otbelowcenter span:nth-child(2){
+    font-size: 25px;
+}
+
+
+.wrapper footer{
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+footer p{
+    padding: 15px 0px 5px 0px;
+    margin: 0;
+    
+}
+
+    .wrapper #introtext{
+    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+    text-align:justify;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+}
+#introtext p{
+    font-size: 18.2px;
+    color: #d1e8e2;
+    
+}
+#introtext p:nth-child(2){
+    color:#8fc33a;
+    text-align: center;
+    margin-top: 10px;
+	
+}
+.introduce #skillset{
+    margin: 0 auto;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+    text-align:left;
+    width: 85%;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#skillset p{
+    font-size: 15px;
+    color: #d1e8e2;
+}
+#skillset p:nth-child(1){
+    letter-spacing: 1px;
+	transition: all 0.3s ease-in-out; 
+}
+    
+    .wrapper #workdone{
+	width: 80%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+    .lefthoverr {
+	width: 100%;
+}
+    #first1 .hoveref {
+	opacity: 0.8;
+}
+    
+    .wrapper #contactss{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+#contactss p:nth-child(1){
+    font-size: 23px;
+}
+#contactss p:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    font-size: 27px;
+}
+#contactss p:nth-child(4){
+    font-size: 23px;
+}
+    #workdone.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #contactss.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #introtext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #skillset.activeop{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .foot.activeop {
+	display: none;
+    }
+    footer.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #centerlogo.activeop {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}
+        #bodytext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+    .wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .wrapper .menu{
+	  width: 100%;
+       height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        background: #373737;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+}
+    .wrapper #branding{
+    top: 3px;
+    margin: 0 auto;
+    left: 0;
+    float: none;
+    border-right: 2px solid #d1e8e2;
+    border-left: 2px solid #d1e8e2;
+    z-index: 9999999;
+}
+    .wrapper nav{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    }
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+}
+ul li{
+    display: block;
+    padding: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: #d1e8e2;
+}
+ul li a:hover{
+    color: #ff8000;
+}
+.menu.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+nav.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrapper .containham{
+    top: 5.8%;
+    right: 10%;
+    visibility: visible;
+}
+
+.wrapper #abtsocialicons{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#abtsocialicons.active {
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+    
+
+.wrapper #bodytext{
+	width: 100%;
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+#bodytext #centertext{
+    width: 80%;
+}
+#centertext h1{
+    font-size: 17px;
+}
+#centertext p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+#centertext #indiatext{
+    font-size: 30px;
+}
+
+#centerlogo {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#centerimg {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+    #centerimg img{
+    z-index: 999;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+    }
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 0px 0px 0px;
+    width: 80%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 20px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+}
+#bodytext #otbelowcenter{
+	width:80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 20px;
+}
+#otbelowcenter p{
+	margin-bottom: 25px;
+    margin-top: 15px;
+}
+#otbelowcenter span:nth-child(1){
+    font-size: 22px;
+}
+#otbelowcenter span:nth-child(2){
+    font-size: 25px;
+}
+
+
+.wrapper footer{
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+footer p{
+    padding: 15px 0px 5px 0px;
+    margin: 0;
+    
+}
+
+    .wrapper #introtext{
+    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+    text-align:justify;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+}
+#introtext p{
+    font-size: 17.4px;
+    color: #d1e8e2;
+    
+}
+#introtext p:nth-child(2){
+    color:#8fc33a;
+    text-align: center;
+    margin-top: 10px;
+	
+}
+.introduce #skillset{
+    margin: 0 auto;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+    text-align:left;
+    width: 85%;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#skillset p{
+    font-size: 15px;
+    color: #d1e8e2;
+}
+#skillset p:nth-child(1){
+    letter-spacing: 1px;
+	transition: all 0.3s ease-in-out; 
+}
+  #skillset p:nth-child(1){
+    font-size: 20px;
+}
+#skillset p:nth-child(2){
+    font-size: 17px;
+}
+#skillset p:nth-child(3){
+    font-size: 16px;
+}
+#skillset p:nth-child(4){
+    font-size: 17px;
+}
+#skillset p:nth-child(5){
+    font-size: 16px;
+}
+#skillset p:nth-child(6){
+    font-size: 17px;
+}
+#skillset p:nth-child(7){
+    font-size: 16px;
+}
+#skillset p:nth-child(8){
+    font-size: 17px;
+}
+#skillset p:nth-child(9){
+    font-size: 16px;
+}   
+    .wrapper #workdone{
+	width: 85%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+    .lefthoverr {
+	width: 100%;
+}
+    #first1 .hoveref {
+	opacity: 0.8;
+}
+    
+    .wrapper #contactss{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+#contactss p:nth-child(1){
+    font-size: 22px;
+}
+#contactss p:nth-child(2){
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    font-size: 25px;
+}
+#contactss p:nth-child(4){
+    font-size: 22px;
+}
+    #workdone.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #contactss.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #introtext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #skillset.activeop{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .foot.activeop {
+	display: none;
+    }
+    footer.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #centerlogo.activeop {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}
+        #bodytext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  
+    .wrapper{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .wrapper .menu{
+	  width: 100%;
+       height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        background: #373737;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+}
+    .wrapper #branding{
+    top: 3px;
+    margin: 0 auto;
+    left: 0;
+    float: none;
+    border-right: 2px solid #d1e8e2;
+    border-left: 2px solid #d1e8e2;
+    z-index: 9999999;
+}
+    .wrapper nav{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    }
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+}
+ul li{
+    display: block;
+    padding: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: #d1e8e2;
+}
+ul li a:hover{
+    color: #ff8000;
+}
+.menu.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+nav.active {
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrapper .containham{
+    top: 5.8%;
+    right: 10%;
+    visibility: visible;
+}
+
+.wrapper #abtsocialicons{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#abtsocialicons.active {
+    transition: all 0.6s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+    
+
+.wrapper #bodytext{
+	width: 100%;
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+#bodytext #centertext{
+    width: 85%;
+}
+#centertext h1{
+    font-size: 17px;
+}
+#centertext p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+#centertext #indiatext{
+    font-size: 25px;
+}
+
+#centerlogo {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#centerimg {
+	z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+    #centerimg img{
+    z-index: 999;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+    }
+#bodytext #belowcenter{
+    margin: 0 auto;
+    color: #d1e8e2;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 0px 0px 0px;
+    width: 85%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+#belowcenter span:nth-child(1){
+    color: #ff8000;
+    font-size: 20px;
+}
+#belowcenter span:nth-child(2){
+    color: #8fc33a;
+}
+#bodytext #otbelowcenter{
+	width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 18px;
+}
+#otbelowcenter p{
+	margin-bottom: 25px;
+    margin-top: 15px;
+}
+#otbelowcenter span:nth-child(1){
+    font-size: 22px;
+}
+#otbelowcenter span:nth-child(2){
+    font-size: 25px;
+}
+
+
+.wrapper footer{
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility:visible;
+}
+footer p{
+    padding: 15px 0px 5px 0px;
+    margin: 0;
+    
+}
+
+    .wrapper #introtext{
+    margin: 0 auto;
+    opacity: 1;
+    visibility: visible;
+    text-align:justify;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+}
+#introtext p{
+    font-size: 15.5px;
+    color: #d1e8e2;
+    
+}
+.introduce #skillset{
+    margin: 0 auto;
+    opacity: 1;
+    padding: 0;
+    visibility: visible;
+    text-align:left;
+    width: 85%;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+#skillset p{
+    font-size: 15px;
+    color: #d1e8e2;
+}
+   #skillset p:nth-child(1){
+    font-size: 18px;
+}
+#skillset p:nth-child(2){
+    font-size: 17px;
+}
+#skillset p:nth-child(3){
+    font-size: 16px;
+}
+#skillset p:nth-child(4){
+    font-size: 17px;
+}
+#skillset p:nth-child(5){
+    font-size: 16px;
+}
+#skillset p:nth-child(6){
+    font-size: 17px;
+}
+#skillset p:nth-child(7){
+    font-size: 16px;
+}
+#skillset p:nth-child(8){
+    font-size: 17px;
+}
+#skillset p:nth-child(9){
+    font-size: 16px;
+} 
+    .wrapper #workdone{
+	width: 85%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+    .lefthoverr {
+	width: 100%;
+}
+    #first1 .hoveref {
+	opacity: 0.8;
+}
+    
+    .wrapper #contactss{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+#contactss p:nth-child(1){
+    font-size: 22px;
+}
+#contactss p:nth-child(2){
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#contactss h1{
+    font-size: 25px;
+}
+#contactss p:nth-child(4){
+    font-size: 22px;
+}
+    #workdone.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #contactss.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #introtext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #skillset.activeop{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .foot.activeop {
+	display: none;
+    }
+    footer.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #centerlogo.activeop {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+}
+        #bodytext.activeop{
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
